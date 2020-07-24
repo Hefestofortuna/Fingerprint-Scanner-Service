@@ -16,6 +16,9 @@ namespace TestEvents
             Controller controller = new Controller();
             controller.Initialization();
             //Console.WriteLine(DateTime.Now.ToString("yyyy-MM-d HH:mm:ss"));
+            //Console.WriteLine(DateTime.Now.ToString("yyyy-MM-d HH:mm:ss")); ФИЫВИФРЫИВТФЫВТФЫТФЫВТФЖЛЫтвИФЫАИМФЫИВФИЫВРИМФЫРЛВИПФЛЫВПЛФПЫВПИФыловфылдовофыитвф
+            //QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            //asdsdasdasdasdasdasdasdasd
             Console.ReadLine();
         }
     }
