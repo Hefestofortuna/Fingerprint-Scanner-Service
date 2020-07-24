@@ -17,6 +17,7 @@ namespace TestEvents
             controller.Initialization();
             //Console.WriteLine(DateTime.Now.ToString("yyyy-MM-d HH:mm:ss"));
             //Console.WriteLine(DateTime.Now.ToString("yyyy-MM-d HH:mm:ss")); ФИЫВИФРЫИВТФЫВТФЫТФЫВТФЖЛЫтвИФЫАИМФЫИВФИЫВРИМФЫРЛВИПФЛЫВПЛФПЫВПИФыловфылдовофыитвф
+            //QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             Console.ReadLine();
         }
     }
