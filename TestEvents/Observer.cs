@@ -22,14 +22,12 @@ namespace TestEvents
         {
         }
 
-        public void UpdateStatusServer(object ob)
+        async public void UpdateStatusServer(object ob)
         {
             DatabaseInfo dInfo = (DatabaseInfo)ob;
             if (!DatabaseInfo.Status)
             {
-                //Console.WriteLine("Сервер упал!");
-                //logger.CreateLoggerFile("Server connection lost!");
-                controller.Initialization();
+                await Task.Run(() => controller.Initialization());
             }
         }
 

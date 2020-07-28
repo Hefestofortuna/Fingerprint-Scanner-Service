@@ -13,7 +13,8 @@ namespace TestEvents.Controllers
             Database database = new Database();
             Observer observer = new Observer(database);
             FingerprintScanner fingerprint = new FingerprintScanner(database);
-            database.onDatabaseConnection();
+            Task.Run(()=> database.onDatabaseConnection());
+            Task.Run(()=> fingerprint.Acid());
 
         }
     }

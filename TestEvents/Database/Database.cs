@@ -31,11 +31,13 @@ namespace TestEvents
                 try
                 {
                     conn.Open();
-                    DatabaseInfo.Status = true; 
+                    DatabaseInfo.Status = true;
+                    FingerprintScannerInfo.CanBeRegistered = true;
                     logger.CreateLoggerFile("Server connected");
-                    conn.Notification += (o, e) =>
+                    conn.Notification += async (o, e) =>
                     {
-                        NotifyObserversAboutUpdate();
+                        if (FingerprintScannerInfo.CanBeRegistered)//Защита от дурака, скидывается после добавления
+                            await Task.Run(() => NotifyObserversAboutUpdate());
                     };
                         using (var cmd = new NpgsqlCommand("LISTEN virtual;", conn))//Wait "NOTIFY virtual" trigger
                         {
@@ -73,7 +75,6 @@ namespace TestEvents
             foreach (IObserver o in observers)
             {
                 o.UpdateStatusServer(dInfo);
-                Console.WriteLine(o.GetType().Name);
             }
         }
 

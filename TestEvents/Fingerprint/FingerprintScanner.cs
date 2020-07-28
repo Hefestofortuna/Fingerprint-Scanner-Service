@@ -10,7 +10,6 @@ namespace TestEvents
     class FingerprintScanner : IObserver //НаблюдаЮЩИЙ объект
     {
         IObservable database;
-
         public FingerprintScanner(IObservable obs)
         {
             database = obs;
@@ -22,42 +21,31 @@ namespace TestEvents
             FingerprintScannerInfo.Status = true;
         }
 
+
+        async public void Acid()
+        {
+            while (true)
+            {
+                if (!FingerprintScannerInfo.Status && DatabaseInfo.Status)
+                {
+                   //Тягаем функцию без нового пользователя, и вносим записи в бд
+                    await Task.Delay(1000);
+                }
+                else if (FingerprintScannerInfo.Status && DatabaseInfo.Status)
+                {
+                    //Увидили NOTIFY, добиваем в запись в бд его отпечаток
+                    await Task.Delay(5000);
+                    FingerprintScannerInfo.Status = false;
+                    FingerprintScannerInfo.CanBeRegistered = true;
+                }
+            }
+        }
+
+
         public void UpdateStatusServer(object ob)
         {
-            Acid();
-        }
-
-        public async void Acid() 
-        {
-            Task AcidGetRecordsTask = new Task(()=>AcidGetRecords());
-            Task AcidAddPersonTask = new Task(()=> AcidAddPerson("Uri", 2,1));
-            Task completedTask = await Task.WhenAny(AcidGetRecordsTask, AcidAddPersonTask);
-            if (completedTask == AcidAddPersonTask)
-            {
-                Console.WriteLine("О, новый чел");
-            }
-            else
-            {
-                Console.WriteLine("Ждемс записей");
-            }
 
         }
-        //-------------------------Функции которые нужно тягать-------------------------
-        public async Task AcidAddPerson(string name, uint id, int pass)
-        {
-
-            await Task.Delay(2000);
-        }
-
-        public async Task<object[]> AcidGetRecords()
-        {
-            while (!DatabaseInfo.Status)
-            {
-                await Task.Delay(2000);
-            }
-            return new object[] { 1, "20.01.2000 11:00", false };
-        }
-        //-------------------------Функции которые нужно тягать-------------------------
 
 
 
