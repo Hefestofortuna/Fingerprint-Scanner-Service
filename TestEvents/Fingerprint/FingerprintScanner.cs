@@ -26,18 +26,44 @@ namespace TestEvents
         {
             while (true)
             {
-                if (!FingerprintScannerInfo.Status && DatabaseInfo.Status)
+                if (DatabaseInfo.Status)
                 {
-                   //Тягаем функцию без нового пользователя, и вносим записи в бд
-                    await Task.Delay(1000);
+                    var delay = getAcid();
+                    var reaction = setAcid();
+
+                    Task completedTask = await Task.WhenAny(delay, reaction);
+
+                    if (completedTask == delay)
+                    {
+                        try { delay.Dispose(); } catch { }
+                        await Task.Delay(1000);
+                        Console.WriteLine("У. ВАУ. НОВЫЙ ЧУВАЧОК");
+                    }
+                    else
+                    {
+                        try { reaction.Dispose(); } catch { }
+                        await Task.Delay(1000);
+                        Console.WriteLine("НОВЫХ НЕТ ИЩЕМ СТАРЫХ");
+                    }
                 }
-                else if (FingerprintScannerInfo.Status && DatabaseInfo.Status)
-                {
-                    //Увидили NOTIFY, добиваем в запись в бд его отпечаток
-                    await Task.Delay(5000);
-                    FingerprintScannerInfo.Status = false;
-                    FingerprintScannerInfo.CanBeRegistered = true;
-                }
+                
+            }
+        }
+
+        public static async Task getAcid()
+        {
+            if (!FingerprintScannerInfo.Status && DatabaseInfo.Status)
+            {
+                //Тягаем функцию без нового пользователя, и вносим записи в бд
+            }
+        }
+        
+        public static async Task setAcid()
+        {
+            if (FingerprintScannerInfo.Status && DatabaseInfo.Status)
+            {
+                FingerprintScannerInfo.Status = false;
+                FingerprintScannerInfo.CanBeRegistered = true;
             }
         }
 
