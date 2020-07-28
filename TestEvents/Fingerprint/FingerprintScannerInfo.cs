@@ -9,5 +9,7 @@ namespace TestEvents
     class FingerprintScannerInfo
     {
         public static bool Status { get; set; }
+        //false: чтение отпечатка
+        //true: чтение отпечатка для регистрации
     }
 }

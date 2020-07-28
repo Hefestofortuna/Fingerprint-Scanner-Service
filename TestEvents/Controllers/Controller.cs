@@ -14,6 +14,7 @@ namespace TestEvents.Controllers
             Observer observer = new Observer(database);
             FingerprintScanner fingerprint = new FingerprintScanner(database);
             database.onDatabaseConnection();
+
         }
     }
 }
