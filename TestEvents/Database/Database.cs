@@ -22,7 +22,7 @@ namespace TestEvents
         FingerprintScanner fInfo;
         Logger logger = new Logger();
 
-        List<IObserver> observers;//Список наблюдателей
+        List<IObserver> observers;//Список наблюдателей //АСИД он же тоже должен быть приватным?
 
         public void onDatabaseConnection() //Проверка NOTIFY из БД и 
         {
@@ -68,6 +68,7 @@ namespace TestEvents
             observers.Add(o);//Удаление подписчиков
         }
 
+        //АСИД след две функции теоретически должны быть приватными? ты же их нигде больше не юзаешь, а они внутри класса
         public void NotifyObserversAboutConnection()
         {
             foreach (IObserver o in observers)
@@ -87,11 +88,12 @@ namespace TestEvents
 
         public Database() 
         {
-            ip = "localhost"; username = "postgres"; password = "Ms34901351"; database= "postgres";
+            ip = "localhost"; username = "postgres"; password = "Ms34901351"; database= "postgres"; 
             observers = new List<IObserver>();
             dInfo = new DatabaseInfo();
         }
-        public Database(string ip, string port, string username, string password, string database) { this.ip = ip; this.port = port; this.username = username; this.password = password; this.database = database; }
+        public Database(string ip, string port, string username, string password, string database)
+        { this.ip = ip; this.port = port; this.username = username; this.password = password; this.database = database; }
 
     }
 }
