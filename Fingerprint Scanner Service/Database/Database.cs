@@ -17,7 +17,7 @@ namespace Fingerprint_Scanner_Service
         FingerprintScanner fInfo;
         Logger logger = new Logger();
 
-        List<IObserver> observers;//Список наблюдателей
+        private List<IObserver> observers;//Список наблюдателей//Согласен
 
         public void onDatabaseConnection() //Проверка NOTIFY из БД и 
         {
@@ -64,7 +64,7 @@ namespace Fingerprint_Scanner_Service
         {
             observers.Add(o);//Удаление подписчиков
         }
-
+        //Hefesto Нужный для реализации интерфейса IObservable
         public void NotifyObserversAboutConnection()
         {
             foreach (IObserver o in observers)
