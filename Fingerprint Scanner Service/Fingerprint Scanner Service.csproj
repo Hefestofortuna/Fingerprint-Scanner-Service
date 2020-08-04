@@ -86,6 +86,7 @@
     <Compile Include="Database\DatabaseInfo.cs" />
     <Compile Include="Fingerprint\FingerprintScanner.cs" />
     <Compile Include="Fingerprint\FingerprintScannerInfo.cs" />
+    <Compile Include="Fingerprint\module\AnzivDeviceUsage.cs" />
     <Compile Include="Interfaces\IObservable.cs" />
     <Compile Include="Interfaces\IObserver.cs" />
     <Compile Include="Logger.cs" />
@@ -105,8 +106,6 @@
   <ItemGroup>
     <Content Include="Configurations\DatabaseServerSetup.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Fingerprint\module\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
