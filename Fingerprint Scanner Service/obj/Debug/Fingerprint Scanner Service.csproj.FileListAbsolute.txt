@@ -1,0 +1,29 @@
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\obj\Debug\Fingerprint Scanner Service.csprojAssemblyReference.cache
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\obj\Debug\Fingerprint Scanner Service.csproj.CoreCompileInputs.cache
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Fingerprint Scanner Service.exe.config
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Fingerprint Scanner Service.exe
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Fingerprint Scanner Service.pdb
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Anviz.SDK.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Npgsql.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Buffers.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Memory.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Text.Json.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.ValueTuple.dll
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\Npgsql.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Buffers.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Memory.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Text.Json.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\bin\Debug\System.ValueTuple.xml
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\obj\Debug\Fingerprint Scanner Service.csproj.CopyComplete
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\obj\Debug\Fingerprint Scanner Service.exe
+C:\Users\Karatui\source\repos\Fingerprint Scanner Service\Fingerprint Scanner Service\obj\Debug\Fingerprint Scanner Service.pdb
