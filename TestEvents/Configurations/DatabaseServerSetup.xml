@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Configurations>
+  
+  <DatabaseServer>
+    
+    <ip>10.110.72.55</ip>
+    <port>80</port>
+    <database>postgress</database>
+    <username>karatui</username>
+    <password>Ms34901351</password>
+    
+  </DatabaseServer>
+  
+</Configurations>
