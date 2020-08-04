@@ -7,6 +7,7 @@
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
+<<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
     <ProjectGuid>{58CC6A28-79C3-489A-964A-3E01C550C04D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -20,11 +21,14 @@
 >>>>>>> parent of b6ad8b0... Full fix in this branch:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
 =======
 >>>>>>> parent of b6ad8b0... Full fix in this branch:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
+=======
+>>>>>>> parent of 652cb94... Merge branch 'acidflora' of https://github.com/Hefestofortuna/Fingerprint-Scanner-Service into acidflora:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
     <ProjectGuid>{38B4D972-5337-4F4C-854A-117B141A9BA4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>TestEvents</RootNamespace>
     <AssemblyName>TestEvents</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+<<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
 <<<<<<< HEAD:TestEvents/TestEvents.csproj
@@ -35,6 +39,8 @@
 >>>>>>> parent of b6ad8b0... Full fix in this branch:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
 =======
 >>>>>>> parent of b6ad8b0... Full fix in this branch:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
+=======
+>>>>>>> parent of 652cb94... Merge branch 'acidflora' of https://github.com/Hefestofortuna/Fingerprint-Scanner-Service into acidflora:Fingerprint Scanner Service/Fingerprint Scanner Service.csproj
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
